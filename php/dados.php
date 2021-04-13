@@ -1,12 +1,10 @@
 <?php
-      header("Access-Control-Allow-Origin: *");
-      header('Content-Type: text/html; charset=utf-8');
-      $host = "mysql:host=localhost;dbname=originais";
-      $usuario = "mysql";
-      $senha = "654321";
+
+
 
       try{
-        $conn = new PDO($host, $usuario, $senha);
+
+        require 'conexao.php';
 
         if(!$conn){
             echo "Não foi possivel conectar com Banco de Dados!";
